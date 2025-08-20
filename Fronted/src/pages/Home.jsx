@@ -51,13 +51,13 @@ const Home = () => {
         socket.emit("join", { userType: "user", userId: user._id })
     }, [ user ])
 
-    // socket.on('ride-confirmed', ride => {
+    socket.on('ride-confirmed', ride => {
 
 
-    //     setVehicleFound(false)
-    //     setWaitingForDriver(true)
-    //     setRide(ride)
-    // })
+        // setVehicleFound(false)
+        setWaitingForDriver(true)
+        // setRide(ride)
+    })
 
     // socket.on('ride-started', ride => {
     //     console.log("ride")
@@ -275,12 +275,11 @@ const Home = () => {
                     destination={destination}
                     fare={fare}
                     vehicleType={vehicleType}
-
                     setConfirmRidePanel={setConfirmRidePanel} setVehicleFound={setVehicleFound} />
             </div>
             <div ref={vehicleFoundRef} className='fixed w-full z-10 bottom-0 translate-y-full bg-white px-3 py-6 pt-12'>
                 <LookingForDriver
-                    // createRide={createRide}
+                    createRide={createRide}
                     pickup={pickup}
                     destination={destination}
                     fare={fare}
