@@ -198,11 +198,8 @@ The request body should be in JSON format and include the following fields:
 
 #### Login User
 
-![Screenshot](Image/UserLogin.png)
+![Screenshot](Image/UserLogin.png) ![Screenshot](Image/UserRegister.png)
 
-<br/>
-
-![Screenshot](Image/UserRegister.png)
 
 
 
