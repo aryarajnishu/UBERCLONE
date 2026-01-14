@@ -6,6 +6,105 @@ A full-stack ride-hailing platform built with the MERN stack, replicating core f
 
 BookYourRide.com is a comprehensive ride-booking application that connects passengers with drivers through an intuitive web interface. The platform leverages Google Maps API for real-time location tracking, route optimization, and accurate distance calculations. With secure JWT-based authentication, dynamic fare calculation, and real-time communication via Socket.IO, this project demonstrates a production-ready architecture for ride-hailing services.
 
+## Project Structure
+
+```
+UBERAPP/
+├── Backend/
+│   ├── controllers/
+│   │   ├── user.controller.js
+│   │   ├── captain.controller.js
+│   │   ├── ride.controller.js
+│   │   └── map.controller.js
+│   │
+│   ├── db/
+│   │   └── db.js
+│   │
+│   ├── middlewares/
+│   │   └── auth.middleware.js
+│   │
+│   ├── models/
+│   │   ├── user.model.js
+│   │   ├── captain.model.js
+│   │   ├── ride.model.js
+│   │   └── blacklistToken.model.js
+│   │
+│   ├── routes/
+│   │   ├── user.routes.js
+│   │   ├── captain.routes.js
+│   │   ├── ride.routes.js
+│   │   └── maps.routes.js
+│   │
+│   ├── services/
+│   │   ├── user.service.js
+│   │   ├── captain.service.js
+│   │   ├── ride.service.js
+│   │   └── maps.service.js
+│   │
+│   ├── app.js
+│   ├── server.js
+│   ├── socket.js
+│   ├── .env
+│   ├── .gitignore
+│   ├── package.json
+│   └── package-lock.json
+│
+├── Fronted/
+│   ├── public/
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   │
+│   │   ├── components/
+│   │   │   ├── CaptainDetails.jsx
+│   │   │   ├── ConfirmRide.jsx
+│   │   │   ├── ConfirmRidePopUp.jsx
+│   │   │   ├── FinishRide.jsx
+│   │   │   ├── LocationSearchPanel.jsx
+│   │   │   ├── LookingForDriver.jsx
+│   │   │   ├── RidePopUp.jsx
+│   │   │   ├── VehiclePanel.jsx
+│   │   │   └── WaitingForDriver.jsx
+│   │   │
+│   │   ├── context/
+│   │   │   ├── UserContext.jsx
+│   │   │   ├── CaptainContext.jsx
+│   │   │   └── SocketContext.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Riding.jsx
+│   │   │   ├── Start.jsx
+│   │   │   ├── UserLogin.jsx
+│   │   │   ├── UserSignup.jsx
+│   │   │   ├── UserLogout.jsx
+│   │   │   ├── UserProtectedWrapper.jsx
+│   │   │   ├── CaptainHome.jsx
+│   │   │   ├── CaptainLogin.jsx
+│   │   │   ├── CaptainSignup.jsx
+│   │   │   ├── CaptainLogout.jsx
+│   │   │   ├── CaptainRiding.jsx
+│   │   │   └── CaptainProtectedWrapper.jsx
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── main.jsx
+│   │   ├── index.css
+│   │   └── .env
+│   │
+│   ├── index.html
+│   ├── eslint.config.js
+│   ├── postcss.config.js
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── README.md
+│   └── .gitignore
+└── README.md
+```
+
+
 ### Key Features
 
 - **Real-time Ride Booking**: Users can request rides instantly with live driver tracking
@@ -735,57 +834,7 @@ npm start
 
 The application will be available at `http://localhost:3001`
 
-## Project Structure
 
-```
-bookyourride/
-├── backend/
-│   ├── controllers/
-│   │   ├── userController.js
-│   │   ├── captainController.js
-│   │   ├── rideController.js
-│   │   └── mapsController.js
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Captain.js
-│   │   └── Ride.js
-│   ├── routes/
-│   │   ├── userRoutes.js
-│   │   ├── captainRoutes.js
-│   │   ├── rideRoutes.js
-│   │   └── mapsRoutes.js
-│   ├── middleware/
-│   │   ├── authMiddleware.js
-│   │   └── validationMiddleware.js
-│   ├── config/
-│   │   └── database.js
-│   ├── utils/
-│   │   └── tokenBlacklist.js
-│   └── server.js
-│
-└── frontend/
-    ├── public/
-    ├── src/
-    │   ├── components/
-    │   │   ├── Map.jsx
-    │   │   ├── RideBooking.jsx
-    │   │   ├── VehicleSelection.jsx
-    │   │   └── UserProfile.jsx
-    │   ├── pages/
-    │   │   ├── Home.jsx
-    │   │   ├── Login.jsx
-    │   │   ├── Register.jsx
-    │   │   ├── CaptainDashboard.jsx
-    │   │   └── UserDashboard.jsx
-    │   ├── services/
-    │   │   ├── api.js
-    │   │   └── socket.js
-    │   ├── context/
-    │   │   └── AuthContext.jsx
-    │   ├── App.js
-    │   └── index.js
-    └── package.json
-```
 
 ## Features in Detail
 
