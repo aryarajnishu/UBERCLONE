@@ -138,11 +138,19 @@ UBERAPP/
 - **bcrypt**: Password hashing for secure authentication
 - **Express Validator**: Request validation middleware
 
-## API Documentation
+## Documentation
+
+## Home Page
+
+![Screenshot](Image/Home.png)
+
 
 ### User Endpoints
 
-#### Register User
+## Register User
+
+![Screenshot](Image/UserRegister.png)
+
 
 **Endpoint:** `/users/register`
 
@@ -198,8 +206,7 @@ The request body should be in JSON format and include the following fields:
 
 #### Login User
 
-![Screenshot](Image/UserLogin.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Screenshot](Image/UserRegister.png)
-
+![Screenshot](Image/UserLogin.png)
 
 
 
@@ -311,9 +318,12 @@ Authorization: Bearer <token>
 }
 ```
 
-### Captain (Driver) Endpoints
+## Captain (Driver) Endpoints
 
-#### Register Captain
+## Register Captain
+
+![Screenshot](Image/CaptionRegister.png)
+
 
 **Endpoint:** `/captains/register`
 
@@ -389,7 +399,10 @@ The request body should be in JSON format and include the following fields:
 
 ---
 
-#### Login Captain
+## Login Captain
+
+![Screenshot](Image/CaptionLogin.png)
+
 
 **Endpoint:** `/captains/login`
 
