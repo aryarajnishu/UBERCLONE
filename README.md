@@ -1,4 +1,5 @@
-# Backend API Documentation
+## BookYourRide.com
+A full-stack ride-hailing platform built with the MERN stack, replicating core features of modern ride-sharing applications like Uber. The platform enables users to book rides, track drivers in real-time, and manage their accounts seamlessly.
 
 ## `/users/register` Endpoint
 
