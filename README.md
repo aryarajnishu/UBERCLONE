@@ -200,6 +200,11 @@ The request body should be in JSON format and include the following fields:
 
 ![Screenshot](Image/UserLogin.png)
 
+<br/>
+
+![Screenshot](Image/UserRegister.png)
+
+
 
 **Endpoint:** `/users/login`
 
