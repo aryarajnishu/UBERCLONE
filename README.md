@@ -835,5 +835,4 @@ bookyourride/
 - Ride scheduling feature
 - In-app chat between users and drivers
 - Admin panel for platform management
-
-
+- Mobile application development (iOS/Android)
