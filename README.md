@@ -198,6 +198,9 @@ The request body should be in JSON format and include the following fields:
 
 #### Login User
 
+![Screenshot](image/UserLogin.png)
+
+
 **Endpoint:** `/users/login`
 
 **Method:** `POST`
