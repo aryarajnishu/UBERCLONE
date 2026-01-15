@@ -787,7 +787,7 @@ GET /rides/get-fare?pickup=1600+Amphitheatre+Parkway,+Mountain+View,+CA&destinat
 
 ### Vehicle Type Fare
 
-![Screenshot](Image/VehicleTypeFare.png)
+![Screenshot](Image/VehicleType.png)
 
 
 - `auto` (number): Fare for auto-rickshaw.
