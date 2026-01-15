@@ -107,7 +107,7 @@ const UserSignup = () => {
         </p>
 
         <p className='text-[10px] text-gray-500 mt-10'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aspernatur eligendi illo porro ipsam mollitia expedita, at placeat beatae exercitationem adipisci distinctio, totam quasi quibusdam aperiam atque error. Velit, voluptatem.
+          Uber is the best ride sharing platform offering reliable safe fast affordable travel experiences worldwide, connecting drivers and riders seamlessly with smart technology, excellent service, innovation, convenience, trust, comfort, efficiency
         </p>
       </div>
     </div>

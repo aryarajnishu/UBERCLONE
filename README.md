@@ -533,9 +533,9 @@ Authorization: Bearer <token>
 }
 ```
 
-### Maps Endpoints
+## Maps Endpoints
 
-#### Get Coordinates
+## Get Coordinates
 
 **Endpoint:** `/maps/get-coordinates`
 
@@ -577,7 +577,7 @@ GET /maps/get-coordinates?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA
 
 ---
 
-#### Get Distance and Time
+## Get Distance and Time
 
 **Endpoint:** `/maps/get-distance-time`
 
@@ -630,7 +630,16 @@ GET /maps/get-distance-time?origin=New+York,NY&destination=Los+Angeles,CA
 
 ---
 
-#### Get Address Suggestions
+## Home page
+
+![Screenshot](Image/UserHome.png)
+
+## Get Address Suggestions
+
+![Screenshot](Image/AutoPickup.png)
+
+
+![Screenshot](Image/AutoDestination.png)
 
 **Endpoint:** `/maps/get-suggestions`
 
@@ -669,9 +678,12 @@ An array of address suggestions:
 }
 ```
 
-### Ride Endpoints
+## Ride Endpoints
 
-#### Create Ride
+## Create Ride
+
+![Screenshot](Image/ConfirmRide.png)
+
 
 **Endpoint:** `/rides/create`
 
@@ -743,7 +755,10 @@ The request body should be in JSON format and include the following fields:
 
 ---
 
-#### Get Fare Estimate
+## Get Fare Estimate
+
+![Screenshot](Image/LookingiForDriver.png)
+
 
 **Endpoint:** `/rides/get-fare`
 
@@ -770,6 +785,11 @@ GET /rides/get-fare?pickup=1600+Amphitheatre+Parkway,+Mountain+View,+CA&destinat
 
 **Example Response:**
 
+### vichele type fare
+
+![Screenshot](Image/VehicleTypeFare.png)
+
+
 - `auto` (number): Fare for auto-rickshaw.
 - `car` (number): Fare for car.
 - `moto` (number): Fare for motorcycle.
@@ -792,6 +812,10 @@ GET /rides/get-fare?pickup=1600+Amphitheatre+Parkway,+Mountain+View,+CA&destinat
   "message": "Error message"
 }
 ```
+
+
+
+
 
 ## Installation & Setup
 
