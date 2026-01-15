@@ -757,7 +757,7 @@ The request body should be in JSON format and include the following fields:
 
 ## Get Fare Estimate
 
-![Screenshot](Image/LookingiForDriver.png)
+![Screenshot](Image/LookingForDriver.png)
 
 
 **Endpoint:** `/rides/get-fare`
@@ -785,7 +785,7 @@ GET /rides/get-fare?pickup=1600+Amphitheatre+Parkway,+Mountain+View,+CA&destinat
 
 **Example Response:**
 
-### vichele type fare
+### Vehicle Type Fare
 
 ![Screenshot](Image/VehicleTypeFare.png)
 
